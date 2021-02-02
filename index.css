@@ -37,6 +37,10 @@ pre {
   margin: 0.75vw 0;
 }
 
+pre {
+  display: inline-block;
+}
+
 footer {
   padding-top: 3vw;
 }
