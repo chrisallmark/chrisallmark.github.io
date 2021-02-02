@@ -2,11 +2,7 @@ body {
   background-color: gray;
 }
 
-body,
-h1,
-h2,
-p,
-pre {
+* {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
 }
