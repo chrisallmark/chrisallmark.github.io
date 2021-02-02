@@ -1,6 +1,6 @@
 body {
   background-color: gray;
-  margin: 3vw auto;
+  margin: 3em auto;
 }
 
 body,
@@ -9,12 +9,12 @@ h2,
 p,
 pre {
   font-family: "Courier New", Courier, monospace;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 h2 {
-  border: 0.25vw solid black;
-  padding: 0.25vw;
+  border: 0.25em solid black;
+  padding: 0.25em;
   display: inline-block;
 }
 
@@ -34,26 +34,22 @@ h1,
 h2,
 p,
 pre {
-  margin: 0.75vw 0;
-}
-
-pre {
-  display: inline-block;
+  margin: 0.75em 0;
 }
 
 footer {
-  padding-top: 3vw;
+  padding-top: 3em;
 }
 
 #download-pdf {
-  bottom: 1vw;
+  bottom: 1em;
   position: fixed;
-  right: 1vw;
+  right: 1em;
 }
 
 #download-pdf img {
-  height: 5vw;
-  width: 5vw;
+  height: 5em;
+  width: 5em;
 }
 
 #header-left {
@@ -69,18 +65,18 @@ footer {
 }
 
 #key-achievements li {
-  margin-bottom: 1vw;
+  margin-bottom: 1em;
 }
 
 .page {
   background-color: white;
-  border: 0.1vw solid black;
+  border: 0.1em solid black;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 2px 4px rgba(0, 0, 0, 0.75),
     0 4px 8px rgba(0, 0, 0, 0.75), 0 8px 16px rgba(0, 0, 0, 0.75),
     0 16px 32px rgba(0, 0, 0, 0.75), 0 32px 64px rgba(0, 0, 0, 0.75);
-  margin: 2vw auto;
-  padding: 4vw 3vw;
-  max-width: 52.5vw;
+  margin: 2em auto;
+  padding: 4em 3em;
+  max-width: 52.5em;
 }
 
 .flex-container {
