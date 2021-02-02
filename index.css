@@ -86,7 +86,7 @@ ul {
   }
 }
 
-flex-container {
+.flex-container {
   display: -webkit-flex;
   display: flex;
 }
