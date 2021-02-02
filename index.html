@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      const cloneHeader = () => {
+        const header = document.getElementsByTagName("header")[0];
+        for (const element of document.getElementsByClassName("clone-header")) {
+          element.insertBefore(header.cloneNode(true), element.childNodes[0]);
+        }
+      };
+      const setBackground = () => {
+        document
+          .getElementsByTagName("body")[0]
+          .style.setProperty(
+            "background-image",
+            "url(bg-" + Math.floor(Math.random() * 10) + ".jpg)"
+          );
+      };
+    </script>
+    <title>Chris Allmark - CV</title>
+  </head>
+  <body onload="cloneHeader();setBackground();">
+    <a href="Chris Allmark - CV.pdf" id="download-pdf" target="_blank"
+      ><img alt="Download PDF" src="download-pdf.png"
+    /></a>
+    <div class="page">
+      <header>
+        <h1>CHRIS ALLMARK</h1>
+        <div class="flex-container">
+          <div class="column" id="header-left">
+            Agilist / Architect / Engineer / Strategist / Technologist<br />Maidenhead
+            UK |
+            <a
+              href="mailto:~c~h~r~i~s~.~a~l~l~m~a~r~k~@~g~m~a~i~l~.~c~o~m~"
+              onmouseover="this.href=this.href.replace(/~/g,'')"
+              >chris.allmark@gmail.com</a
+            >
+            |
+            <a
+              href="tel:~+~4~4~7~5~9~5~3~0~3~8~5~9~"
+              onmouseover="this.href=this.href.replace(/~/g,'')"
+              >+44(0)7595303859</a
+            >
+          </div>
+          <div class="column" id="header-right">
+            Scrum Certified<br />CSD / CSM / CSP
+          </div>
+        </div>
+        <pre>
+----------------------------------------------------------------------------------------</pre
+        >
+      </header>
+      <h2>PROFESSIONAL PROFILE</h2>
+      <p>
+        An experienced technology leader, a pragmatic software development
+        manager, a certified agile coach and a full-stack software engineer who
+        has worked across a broad range of business sectors including banking,
+        broadcasting, logistics, manufacturing, publishing, retail, social
+        networking, telecommunications, telematics & utilities.
+      </p>
+      <p>
+        A passionate advocate of agile & lean software engineering who has
+        worked for several leading brands, including ASOS, Which?, The
+        Economist, The Financial Times, MySpace and Nickelodeon. Currently
+        employed as the Head of Core Systems for giffgaff, transforming their
+        existing monolithic application stack into a microservice-based
+        architecture, deployed on-demand to a cloud-native environment.
+      </p>
+      <p>
+        A certified scrum developer (CSD), scrum master (CSM) & scrum
+        professional (CSP) that thrives on a challenge and has a broad range of
+        technical skills. Works across the entire software development
+        lifecycle, designing and developing a variety of application
+        architectures, specialising in secure, scalable microservice-based
+        systems.
+      </p>
+      <p>
+        Currently looking for a challenging position with a forward-thinking
+        organisation as either a hands-on head of product engineering, software
+        development manager or technical lead. Ideally working with
+        cross-functional teams driving their Agile and DevOps transformations
+        using a cloud-based continuous delivery approach.
+      </p>
+      <h2 id="core-skills">CORE SKILLS</h2>
+      <pre>
++------------+------------+------------+---------+----------------+------------+-----+
+| <strong>Databases</strong>  | <strong>Frameworks</strong> | <strong>Languages</strong>  | <strong>Methods</strong> | <strong>Queues/Streams</strong> | <strong>Tools</strong>      | <strong>...</strong> |
++------------+------------+------------+---------+----------------+------------+-----+
+| MySQL      | Cypress    | CSS3/HTML5 | Agile   | Active MQ      | Docker     | AWS |
+| Oracle     | Hugo       | ECMAScript | Kanban  | Kafka          | Kubernetes | DDD |
+| PostgreSQL | NextJS     | Java       | Lean    | Kinesis        | Git        | IOT |
+|            | ReactJS    | NodeJS     | Scrum   | Rabbit MQ      | Jenkins    | TDD |
+|            | Spring     | PHP        | XP      | Redis          | Terraform  |     |
+|            |            | Typescript |         |                |            |     |
++------------+------------+------------+---------+----------------+------------+-----+</pre
+      >
+      <h2>PROFESSIONAL CERTIFICATIONS</h2>
+      <p>
+        Scrum Developer (2014) - Scrum Professional (2011) - Scrum Master (2008)
+      </p>
+      <footer>Page 1</footer>
+    </div>
+    <div class="clone-header page">
+      <h2>CURRENT EMPLOYMENT</h2>
+      <p>
+        <strong
+          >giffgaff : Scrum Master (2014) -> Agile Governance Lead (2015)->
+          Technical Governance Lead (2016) -> Head of Product Engineering (2017)
+          -> Head of Core Systems (202)</strong
+        >
+      </p>
+      <p>
+        Started as a technical <strong>Scrum Master</strong> with the
+        responsibility for managing the delivery of two large software
+        development teams of over forty engineers, split by discipline - a team
+        of back-end Java/Python developers and a team of front-end
+        Javascript/PHP developers both with integrated quality assurance.
+      </p>
+      <p>
+        After a three-month review of working practices, proposed a
+        reorganisation of the company around lean product engineering teams to
+        the giffgaff leadership team. This business-wide transformation would
+        reinvigorate the agile process and reduce the length of the feedback
+        cycle from members, enabling giffgaff to truly be “the mobile network
+        run by you”. In a new role as the
+        <strong>Agile Governance Lead</strong>, managing the organisational
+        change that led to the creation of multiple cross-functional,
+        domain-focused teams, each with a dedicated product owner and scrum
+        master.
+      </p>
+      <p>
+        The restructuring of teams highlighted the constraints of the existing
+        monolithic application architecture, the lack of automated tests and the
+        reliance on manual quality assurance and operational processes. This
+        resulted in a low release cadence with a high number of failed releases.
+        Transitioning to the role of
+        <strong>Technical Governance Lead</strong> led to the establishment of a
+        new strategic direction for the organisation to achieve continuous
+        delivery through the following initiatives:
+      </p>
+      <ul>
+        <li>
+          Upgrade to Java 11 and deprecate PHP in favour of React/React Native
+          client apps
+        </li>
+        <li>
+          Adopt a microservice architecture with dockerized Spring Boot services
+        </li>
+        <li>
+          Rebalance the unit/integration/system test ratio; make everyone a
+          tester
+        </li>
+        <li>
+          Adopt trunk-based development with dynamic code control via feature
+          toggles
+        </li>
+        <li>
+          Switch to a cloud-native platform and introduce immutable
+          infrastructure
+        </li>
+        <li>
+          Use CI/CD build pipelines to deploy-on-demand with a “you build it,
+          you run it” model
+        </li>
+      </ul>
+      <p>
+        As the Head of <strong>Product Engineering</strong> had responsibility
+        for the line management of over seventy software development engineers
+        and the design, development, testing, and deployment of giffgaff
+        software products. Also accountable for best practices, code standards,
+        performance management and recruitment, and serving as the primary
+        contact for product engineering across the business. As
+        <strong>Head of Core Systems</strong> has responsibility for the
+        community, developer experience, help, identity, mobile and payment
+        teams.
+      </p>
+      <footer>Page 2</footer>
+    </div>
+    <div class="clone-header page">
+      <h2>KEY ACHIEVEMENTS</h2>
+      <ul id="key-achievements">
+        <li>
+          Presented at the Telefónica Developers Conference in Madrid -
+          <a href="https://www.youtube.com/watch?v=3VsJK9o36Xs">TEFCon 2015</a>
+          “Hacking The Future” - and received a speaker award for an ‘Agile
+          Cultural Change’ talk
+        </li>
+        <li>
+          Organised a hackathon for all product engineers to introduce them to
+          <a href="https://aws.amazon.com/">Amazon Web Services</a> using Alexa
+          and built a fully functional service for querying member accounts
+        </li>
+        <li>
+          Created a behaviours & skills framework and a structured recruitment
+          process together with an automated remote code test publishing
+          application using the
+          <a href="https://docs.github.com/en/rest">GitHub API</a>
+        </li>
+        <li>
+          Ran recruitment events at
+          <a href="https://www.siliconmilkroundabout.com/"
+            >Silicon Milk Roundabout</a
+          >, including the design and construction of the stand and producing a
+          <a href="https://www.youtube.com/watch?v=AwNomvsQrqI">showreel</a> for
+          the event display systems
+        </li>
+        <li>
+          Established communities of practice (COPs) and special interest groups
+          (SIGs) to promote collaboration and knowledge sharing between giffgaff
+          technology teams
+        </li>
+        <li>
+          Published an agile engineering manifesto that combined agile and
+          extreme programming practices & principles and helped to establish a
+          common technology mindset
+        </li>
+        <li>
+          Introduced a ‘kaizen’ continuous improvement process to help address
+          cross-cutting engineering issues and ‘kaizen days’ to enable team
+          experimentation and innovation
+        </li>
+        <li>
+          Built an application called giffgaff dash using on
+          <a href="https://www.balena.io/">balena.io</a> to deploy build monitor
+          & observability dashboards to a centrally managed IoT fleet in the
+          giffgaff offices
+        </li>
+        <li>
+          Implemented a robust end-to-end testing framework using
+          <a href="https://www.cypress.io/">cypress.io</a>, which provided
+          enhanced tooling and visibility of build failures
+        </li>
+        <li>
+          Created a sequence chart generator based on
+          <a href="https://mscgen.js.org/">mscgen_js</a> syntax that used method
+          call logs captured using Spring AOP to reverse-engineer process flows
+          from a legacy codebase
+        </li>
+        <li>
+          Hosted
+          <a href="http://www.agileroundabout.com/">The Agile Roundabout</a> at
+          the giffgaff offices with the topic of
+          <a href="https://www.youtube.com/watch?v=Cl51XMcQpCQ"
+            >Getting Back To Continuous Disruption</a
+          >
+          and presented on the topic of continuous delivery at giffgaff
+        </li>
+        <li>
+          Designed, developed, deployed and managed a technology-focused
+          blogging platform at
+          <a href="https://www.giffgaff.io/">giffgaff.io</a> using the
+          <a href="https://gohugo.io/">Hugo</a>
+          static site generator and the
+          <a href="https://www.giffgaff.design/">giffgaff.design</a> system
+        </li>
+        <li>
+          Constructed a knowledge base intranet site using on
+          <a href="https://squidfunk.github.io/mkdocs-material/">Material</a>
+          for MkDocs to manage architectural decision records, request for
+          comment and other team documentation
+        </li>
+      </ul>
+      <footer>Page 3</footer>
+    </div>
+    <div class="clone-header page">
+      <h2 id="employment-history">EMPLOYMENT HISTORY</h2>
+      <pre>
++-------------------------+-----------------------------+----------+----------+-------+
+| <strong>Company</strong>                 | <strong>Role</strong>                        | <strong>From</strong>     | <strong>To</strong>       | <strong>Basis</strong> |
++-------------------------+-----------------------------+----------+----------+-------+
+| giffgaff                | Head of Core Systems        | Nov 2017 | Now      | Perm  |
+| giffgaff                | Head of Product Engineering | Jun 2014 | Oct 2017 | Cont  |
+| ASOS                    | Development Manager         | Feb 2013 | May 2014 | Cont  |
+| Which?                  | Agile Project Manager       | Apr 2012 | Jan 2013 | Cont  |
+| The Economist           | Agile Project Manager       | Oct 2011 | Mar 2012 | Cont  |
+| John Wiley & Sons       | Iteration Manager           | Feb 2011 | Sep 2011 | Cont  |
+| Reed Exhibitions        | Head of Online Development  | Jul 2010 | Dec 2010 | Cont  |
+| The Economist           | Scrum Master                | Feb 2010 | Jun 2010 | Cont  |
+| The Financial Times     | Scrum Master                | Aug 2009 | Jan 2010 | Cont  |
+| The Economist           | Agile Project Manager       | Sep 2009 | Aug 2009 | Cont  |
+| MySpace                 | Development Manager         | Jan 2007 | Apr 2009 | Perm  |
+| Dunnhumby               | Principle Engineer          | Sep 2006 | Aug 2007 | Perm  |
+| Keane                   | Senior Consultant           | Feb 2004 | Aug 2006 | Perm  |
+| Powergen                | Analyst/Programmer          | Apr 2003 | Feb 2004 | Cont  |
+| Nickelodeon             | Lead Developer              | Mar 2002 | Mar 2003 | Cont  |
+| Trafficmaster           | Lead Developer              | Jun 2001 | Feb 2002 | Cont  |
+| GE Information Services | Technical Consultant        | Feb 1997 | Mar 2000 | Cont  |
+| TNT Express Worldwide   | Analyst/Programmer          | Sep 1989 | Jan 1997 | Perm  |
++-------------------------+-----------------------------+----------+----------+-------+</pre
+      >
+      <h2>OTHER INTERESTS</h2>
+      <p>
+        Cycling - Disney Parks & Resorts - Football - Graphic Design - Retro
+        Computing & Gaming
+      </p>
+      <h2>REFERENCES</h2>
+      <p>
+        See
+        <a href="https://www.linkedin.com/in/chrisallmark"
+          >https://www.linkedin.com/in/chrisallmark</a
+        >
+        and available on demand
+      </p>
+      <footer>Page 4</footer>
+    </div>
+  </body>
+</html>

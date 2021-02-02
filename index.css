@@ -1,0 +1,90 @@
+body {
+  background-color: gray;
+  margin: 3vw auto;
+}
+
+body,
+h1,
+h2,
+pre {
+  font-family: "Source Code Pro";
+  font-size: 1vw;
+}
+
+h2 {
+  border: 0.25vw solid black;
+  padding: 0.25vw;
+  display: inline-block;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li:before {
+  content: "*";
+}
+
+h1,
+h2,
+p,
+pre {
+  margin: 0.75vw 0;
+}
+
+footer {
+  padding-top: 3vw;
+}
+
+#download-pdf {
+  bottom: 1vw;
+  position: fixed;
+  right: 1vw;
+}
+
+#download-pdf img {
+  height: 5vw;
+  width: 5vw;
+}
+
+#header-left {
+  text-align: left;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+#header-right {
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+#key-achievements li {
+  margin-bottom: 1vw;
+}
+
+.page {
+  background-color: white;
+  border: 0.1vw solid black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 2px 4px rgba(0, 0, 0, 0.75),
+    0 4px 8px rgba(0, 0, 0, 0.75), 0 8px 16px rgba(0, 0, 0, 0.75),
+    0 16px 32px rgba(0, 0, 0, 0.75), 0 32px 64px rgba(0, 0, 0, 0.75);
+  margin: 2vw auto;
+  max-width: 52.5vw;
+  padding: 4vw 3vw;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-container .column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
