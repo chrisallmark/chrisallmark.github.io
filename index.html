@@ -6,13 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <script>
-      const cloneHeader = () => {
+      if (screen.width <= 1024) {
+        window.location.replace("Chris Allmark - CV.pdf");
+      }
+      const init = () => {
         const header = document.getElementsByTagName("header")[0];
         for (const element of document.getElementsByClassName("clone-header")) {
           element.insertBefore(header.cloneNode(true), element.childNodes[0]);
         }
-      };
-      const setBackground = () => {
         document
           .getElementsByTagName("body")[0]
           .style.setProperty(
@@ -23,7 +24,7 @@
     </script>
     <title>Chris Allmark - CV</title>
   </head>
-  <body onload="cloneHeader();setBackground();">
+  <body onload="init();">
     <a href="Chris Allmark - CV.pdf" id="download-pdf" target="_blank"
       ><img alt="Download PDF" src="download-pdf.png"
     /></a>
