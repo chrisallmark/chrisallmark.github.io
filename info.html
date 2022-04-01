@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <meta
+      property="og:image"
+      content="https://chrisallmark.github.io/chris-allmark-cv.jpg"
+    />
+    <meta
+      property="og:description"
+      content="An experienced technology leader, a pragmatic software engineering manager, a certified agile coach and a full-stack software developer."
+    />
+    <meta property="og:title" content="Chris Allmark CV" />
+    <meta property="og:url" content="//chrisallmark.github.io/" />
+    <script>
+      if (screen.width <= 1024) {
+        window.location.replace("chris-allmark-cv.pdf");
+      }
+      const init = () => {
+        document
+          .getElementsByTagName("body")[0]
+          .style.setProperty(
+            "background-image",
+            "url(bg-" + Math.floor(Math.random() * 10) + ".jpg)"
+          );
+      };
+    </script>
+    <title>chris-allmark-cv</title>
+  </head>
+  <body id="info" onload="init();">
+    <div id="info-wrapper">
+      <div class="page">
+        <header class="center">
+          <img
+            alt="Chris Allmark"
+            id="chris-allmark"
+            src="chris-allmark.jpg"
+            title="Chris Allmark"
+          />
+          <h1>CHRIS ALLMARK</h1>
+          <p>Agilist / Architect / Engineer / Strategist / Technologist</p>
+          <pre>
+----------------------------------------------------------------------------------------</pre
+          >
+        </header>
+        <blockquote>
+          Although I am drawn to working for big brands I'm looking to work for
+          a
+          <strong>distruptive organisation</strong> with a
+          <strong>compelling mission</strong> and a
+          <strong>sense of purpose</strong>.
+        </blockquote>
+        <blockquote>
+          I want to be working with a modern technology stack - so for me that's
+          no C#, no Java and no PHP - I'm happiest working on building
+          distributed, robust & scalable systems based on
+          <strong>JavaScript </strong>technologies across the entire stack. It's
+          important that company I work have adopted (or are looking to adopt)
+          an agressive <strong>continuous deployment</strong> approach, are
+          using a
+          <strong>cloud-native</strong>
+          platform (ideally Amazon Web Services) and have a
+          <strong>dev/sec/ops</strong> mindset.
+        </blockquote>
+        <blockquote>
+          Whilst I am considering a role as a
+          <strong>chief technology officer</strong> I'm not looking for a purely
+          strategic role so would want this position within a fast-paced tech
+          company or startup. For roles as a
+          <strong>head of engineering</strong> or an
+          <strong>engineering manager</strong>, regardless of the organisation
+          size, it's important that this has the scope to be heavily involved in
+          the technical detail - strategic direction, architecural approach and
+          all aspects of software engineering.
+        </blockquote>
+        <div class="center"><a href="index.html">Back to CV</a></div>
+      </div>
+    </div>
+  </body>
+</html>
