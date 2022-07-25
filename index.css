@@ -41,6 +41,11 @@ pre {
   overflow: hidden;
 }
 
+td {
+  padding-bottom: 1em;
+  vertical-align: top;
+}
+
 ul {
   padding-left: 0;
 }
