@@ -46,6 +46,10 @@ td {
   vertical-align: top;
 }
 
+td:first-child {
+  padding-right: 0.5em;
+}
+
 ul {
   padding-left: 0;
 }
